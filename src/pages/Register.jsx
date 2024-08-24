@@ -9,6 +9,7 @@ const Register = () => {
     name: "",
     email: "",
     password: "",
+    blogs:[],
   });
   const handleInputChange = (e) => {
     setInputs((prevState) => ({
@@ -26,6 +27,7 @@ const Register = () => {
           username: inputs.name,
           email: inputs.email,
           password: inputs.password,
+          blogs:inputs.blogs,
         }
       );
       if (data.success) {
