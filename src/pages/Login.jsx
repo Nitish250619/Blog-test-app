@@ -29,7 +29,8 @@ const Login = () => {
           password: inputs.password,
         }
       );
-      if (data.success) {
+      console.log(data)
+      if (data?.success) {
         localStorage.setItem("userId", data?.user._id);
         dispatch(authActions.login());
         alert("user login successfully");
